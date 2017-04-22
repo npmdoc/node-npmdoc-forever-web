@@ -1,0 +1,357 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/Tjatse/forever-web">forever-web (v0.1.0)</a>
+</h1>
+<h4>An elegant web interface for Nodejitsi/forever.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.forever-web">module forever-web</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.forever-web.debug">
+            function <span class="apidocSignatureSpan">forever-web.</span>debug
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">forever-web.</span>debug.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.forever-web.debug">module forever-web.debug</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.forever-web.debug.debug">
+            function <span class="apidocSignatureSpan">forever-web.</span>debug
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.forever-web.debug.prototype">module forever-web.debug.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.forever-web.debug.prototype._l">
+            function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>_l
+            <span class="apidocSignatureSpan">(level, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.forever-web.debug.prototype.d">
+            function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>d
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.forever-web.debug.prototype.e">
+            function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>e
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.forever-web.debug.prototype.i">
+            function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>i
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.forever-web.debug.prototype.l">
+            function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>l
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.forever-web.debug.prototype.w">
+            function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>w
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.forever-web" id="apidoc.module.forever-web">module forever-web</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.forever-web.debug" id="apidoc.element.forever-web.debug">
+        function <span class="apidocSignatureSpan">forever-web.</span>debug
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Debug(options) {
+  if (!(this instanceof Debug)) {
+    return new Debug(options);
+  }
+  if (typeof options == 'string') {
+    options = {
+      namespace: options
+    };
+  }
+  this.options = _.defaults(options || {}, {
+    namespace: 'forever-web',
+    timestamp: true,
+    debug: false
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.forever-web.debug" id="apidoc.module.forever-web.debug">module forever-web.debug</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.forever-web.debug.debug" id="apidoc.element.forever-web.debug.debug">
+        function <span class="apidocSignatureSpan">forever-web.</span>debug
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Debug(options) {
+  if (!(this instanceof Debug)) {
+    return new Debug(options);
+  }
+  if (typeof options == 'string') {
+    options = {
+      namespace: options
+    };
+  }
+  this.options = _.defaults(options || {}, {
+    namespace: 'forever-web',
+    timestamp: true,
+    debug: false
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.forever-web.debug.prototype" id="apidoc.module.forever-web.debug.prototype">module forever-web.debug.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.forever-web.debug.prototype._l" id="apidoc.element.forever-web.debug.prototype._l">
+        function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>_l
+        <span class="apidocSignatureSpan">(level, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_l = function (level, args) {
+  if(!this.options.debug){
+    return;
+  }
+  args = _.values(args);
+
+  var prints = [chalk.bgBlack.grey(this.options.namespace)];
+  var prefix, color;
+  switch (level) {
+    case 'e':
+      prefix = 'ERR!', color = 'red';
+      break;
+    case 'w':
+      prefix = 'warn', color = 'yellow';
+      break;
+    case 'd':
+      if(this.options.timestamp){
+        prints.push(chalk.underline.dim((new Date()).toISOString()))
+      }
+      break;
+    default :
+      prefix = args.splice(0, 1), color = 'green';
+      break;
+  }
+  if(prefix &amp;&amp; color){
+    prints.splice(2, 0, chalk.bgBlack[color](prefix));
+  }
+  prints.push(args.join(' '));
+  console.log.apply(null, prints);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.forever-web.debug.prototype.d" id="apidoc.element.forever-web.debug.prototype.d">
+        function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>d
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">d = function (){
+  this._l.call(this, s, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.forever-web.debug.prototype.e" id="apidoc.element.forever-web.debug.prototype.e">
+        function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>e
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">e = function (){
+  this._l.call(this, s, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.forever-web.debug.prototype.i" id="apidoc.element.forever-web.debug.prototype.i">
+        function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>i
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">i = function (){
+  this._l.call(this, s, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      return;
+    }
+    global.__route_root = path.basename(f, '.js');
+    require(path.resolve(_cwd, f));
+    delete global.__route_root;
+  });
+  routes.forEach(function (route) {
+    log.<span class="apidocCodeKeywordSpan">i</span>('hook', chalk.bold.green(route.method.toUpperCase()), chalk.underline
+.grey(route.path));
+    server[route.method](route.path, function(req, res, next){
+      req.log = log;
+      next();
+    }, route.fn);
+  });
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.forever-web.debug.prototype.l" id="apidoc.element.forever-web.debug.prototype.l">
+        function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>l
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">l = function (){
+  this._l.call(this, s, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.forever-web.debug.prototype.w" id="apidoc.element.forever-web.debug.prototype.w">
+        function <span class="apidocSignatureSpan">forever-web.debug.prototype.</span>w
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">w = function (){
+  this._l.call(this, s, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
